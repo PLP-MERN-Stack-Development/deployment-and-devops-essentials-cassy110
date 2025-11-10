@@ -87,7 +87,7 @@ describe('ErrorBoundary', () => {
     // Click try again button
     fireEvent.click(screen.getByText('Try Again'));
 
-    // Rerender with safe component
+    // Rerender with safe component - the state should reset
     rerender(
       <ErrorBoundary>
         <SafeComponent />
